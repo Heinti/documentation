@@ -30,6 +30,15 @@ A Project has Activities and History panels. Meetings, Calls, and Emails can be 
 
 ![Project](../../_static/images/extensions/project-management/project.png){width="594"}
 
+
+### Project categories
+
+*As of v1.4.*
+
+Projects can be organized into categories. Categories follow a hierarchical, tree-like structure.
+
+Access to categories is controlled by Roles, with the Project Category scope. Only administrators can create or edit cateogiries.
+
 ## Boards
 
 A Project Board defines board Stages for a Project. The *Board* field is mandatory in a Project. It can be set only when you create a Project. Multiple Projects can use the same Project Board.
@@ -72,7 +81,7 @@ The admin can create custom Project Roles. The Project Roles list view is availa
 
 Project Roles allow fine-grained access control.
 
-A Project Role defines the following Task related actions and levels:
+A Project Role defines the following Task related permissions:
 
 * Create – yes/no – can create Tasks;
 * Assignment – all/own – whom can assign Tasks to;
@@ -81,6 +90,14 @@ A Project Role defines the following Task related actions and levels:
 * Edit – all/assigned/own – what Tasks can edit;
 * Stage Edit – all/assigned/own – what Tasks can move on the board;
 * Delete – all/own/no – what Tasks can delete.
+
+It also defines one Project related permission:
+
+* Project Stream – yes/no – can view the Project's stream (as of v1.4).
+
+!!! note
+
+    If a project member has access to the project's stream but does not have access to a task, they can still see that task in the stream. But they cannot open it to view details.
 
 ## Members
 
