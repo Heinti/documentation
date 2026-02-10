@@ -32,3 +32,5 @@
 10. Log in to any convenient SIP client (for example, Zoiper, Linphone, Jami or any other) using the credentials created in step 4, where the username will be in the `credential_username@SIP_URL.sip.twilio.com` format, the password is the one you specified for this credential.
 
 11. Make a call from your EspoCRM instance by clicking on the phone number, accept the call in the SIP client and wait for the call to reach the desired number. Two separate numbers should be used to test the connection properly.
+
+Note: If the call drops, check Twilio's *Voice Geographic Permissions*: https://console.twilio.com/us1/develop/voice/settings/geo-permissions. Mark your country with a checkbox and click on the *Save* button.
