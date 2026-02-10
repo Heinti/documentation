@@ -124,6 +124,14 @@ Make sure that your users have the access to the entity 'Calls'.
 
     ![Twilio enable SIP domain](../../_static/images/extensions/voip-integration/twilio-enable-sip-domain.png)
 
+## How to test the connection
+
+1. Log in to any convenient SIP client (for example, Zoiper, Linphone, Jami or any other) using the credentials created earlier, where the username will be in the `credential_username@SIP_URL.sip.twilio.com` format, the password is the one you specified for this credential.
+2. Make a call from your EspoCRM instance by clicking on the phone number, accept the call in the SIP client and wait for the call to reach the desired number. Two separate numbers should be used to test the connection properly
+
+## Detailed Twilio Configuration Guide
+If any of the steps above are unclear or require additional clarification, please refer to the [Detailed, step-by-step Twilio configuration guide](voip-integration/step-by-step-twilio-configuration.md#).
+
 ## More Twilio settings for users
 
 Each user can set “Do Not Disturb” mode for incoming lines. To do it, go to the home page (click on a logo) and add a “VoIP Settings” dashlet (“+” button).
