@@ -21,3 +21,14 @@
 
 ![Twilio friendly name/URL](/docs/_static/images/extensions/voip-integration/detailed-twilio-espoUser.png)
 
+6. In your EspoCRM instance, go to Administration > Integrations > VoIP » Twilio and configure everything as follows: [How to configure Twilio Integration for an administrator](twilio-integration-setup.md#how-to-configure-twilio-integration-for-an-administrator)
+
+7. Additionally, set the *Enabled SIP Domain* value. If the previous steps were completed correctly, available options will be displayed as a drop-down menu.
+
+8. Click *Test Connection* button and save the Connector.
+
+9. In the EspoCRM instance configure VoIP Router as indicated in the following instructions: [How to configure Twilio Integration for an administrator](voip-integration/twilio-integration-setup/#how-to-configure-routing-of-twilio-phone-numbers.)
+
+10. Log in to any convenient SIP client (for example, Zoiper, Linphone, Jami or any other) using the credentials created in step 4, where the username will be in the `credential_username@SIP_URL.sip.twilio.com` format, the password is the one you specified for this credential.
+
+11. Make a call from your EspoCRM instance by clicking on the phone number, accept the call in the SIP client and wait for the call to reach the desired number. Two separate numbers should be used to test the connection properly.
