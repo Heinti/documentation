@@ -130,7 +130,7 @@ Make sure that your users have the access to the entity 'Calls'.
 2. Make a call from your EspoCRM instance by clicking on the phone number, accept the call in the SIP client and wait for the call to reach the desired number. Two separate numbers should be used to test the connection properly
 
 ## Detailed Twilio Configuration Guide
-If any of the steps above are unclear or require additional clarification, please refer to the [Detailed, step-by-step Twilio configuration guide](voip-integration/step-by-step-twilio-configuration.md#).
+If any of the steps above are unclear or require additional clarification, please refer to the [Detailed, step-by-step Twilio configuration guide](step-by-step-twilio-configuration.md).
 
 ## More Twilio settings for users
 
