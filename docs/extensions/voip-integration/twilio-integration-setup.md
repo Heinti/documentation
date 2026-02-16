@@ -40,6 +40,23 @@ There are two ways in which you can set up Twilio integration:
 * **Transfer Timeout** – the number of seconds the customer has to wait for an agent to answer the transferred call.
 * **Experimental features** – test experimental features.
 
+## How to configure SIP Domains
+
+1. Configure a SIP domain in Twilio:
+
+    1. Login to your Twilio account.
+    3. Go to Twilio SIP Domains by clicking in the menu on the left side and select “Programmable Voice” option or just click the link: https://www.twilio.com/console/voice/sip/endpoints.
+    4. The next thing to do is to create a SIP Domain. To do that, select Domains option in the menu on the left side and press “+” button.
+    5. In the next window, you have to set up the domain configuration. Set the domain name (Friendly name), create your custom SIP URL, create Credential list for Voice Authentication, enable SIP Registration (by default its disabled), select Credential lists (created for Voice Authentication) and click Save.
+
+2. Enable this SIP Domain in EspoCRM connector:
+
+    1. Login as Administrator in EspoCRM.
+    2. Navigate to the Administration > VoIP Settings > VoIP » Twilio.
+    3. Select your custom SIP URL from the “Enable SIP Domains” field.
+
+For more detailed instructions, please follow the 3-5 steps of [Detailed, step-by-step Twilio configuration guide](step-by-step-twilio-configuration.md). 
+
 ## How to configure routing of Twilio phone numbers
 
 After you have successfully filled in the connection details, EspoCRM will import all active Twilio phone numbers (wait a few minutes the first time).
@@ -98,31 +115,6 @@ All other configuration settings should be made by your administrator. The user 
 Make sure that your users have the access to the entity 'Calls'.
 
 * [Grant access to Calls](customization.md#grant-access-to-calls)
-
-## How to configure SIP Domains
-
-1. Configure a SIP domain in Twilio:
-
-    1. Login to your Twilio account.
-    2. Go to Twilio SIP Domains by clicking in the menu on the left side and select “Programmable Voice” option or just click the link: https://www.twilio.com/console/voice/sip/endpoints.
-
-    ![Twilio SIP Domains](../../_static/images/extensions/voip-integration/twilio-sip-domains.png)
-
-    3. The next thing to do is to create a SIP Domain. To do that, select Domains option in the menu on the left side and press “+” button.
-
-    ![Twilio add SIP domains](../../_static/images/extensions/voip-integration/twilio-add-sip-domain.png)
-
-    4. In the next window, you have to set up the domain configuration. Set the domain name (Friendly name), create your custom SIP URL, create Credential list for Voice Authentication, enable SIP Registration (by default its disabled), select Credential lists (created for Voice Authentication) and click Save.
-
-    ![Twilio SIP configuration](../../_static/images/extensions/voip-integration/twilio-sip-domain-configuration.png)
-
-2. Enable this SIP Domain in EspoCRM connector:
-
-    1. Login as Administrator in EspoCRM.
-    2. Navigate to the Administration > VoIP Settings > VoIP » Twilio.
-    3. Select your custom SIP URL from the “Enable SIP Domains” field.
-
-    ![Twilio enable SIP domain](../../_static/images/extensions/voip-integration/twilio-enable-sip-domain.png)
 
 ## How to test the connection
 
