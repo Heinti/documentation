@@ -27,12 +27,12 @@
 
 8. Click *Test Connection* button and save the Connector.
 
-9. In the EspoCRM instance configure VoIP Router as indicated in the following instructions: [How to configure Twilio Integration for an administrator](twilio-integration-setup/#how-to-configure-routing-of-twilio-phone-numbers.)
+9. In the EspoCRM instance configure VoIP Router as indicated in the following instructions: [How to configure routing of Twilio phone numbers](twilio-integration-setup.md#how-to-configure-routing-of-twilio-phone-numbers)
 
 10. Log in to any convenient SIP client (for example, Zoiper, Linphone, Jami or any other) using the credentials created in step 4, where the username will be in the `credential_username@SIP_URL.sip.twilio.com` format, the password is the one you specified for this credential.
 
 11. Make a call from your EspoCRM instance by clicking on the phone number, accept the call in the SIP client and wait for the call to reach the desired number. Two separate numbers should be used to test the connection properly.
 
 !!! note
-
+        
     If the call drops, check Twilio's *Voice Geographic Permissions*: https://console.twilio.com/us1/develop/voice/settings/geo-permissions. Mark your country with a checkbox and click on the *Save* button.
